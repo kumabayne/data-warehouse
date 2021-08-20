@@ -1,0 +1,113 @@
+.card {
+  align-items: center;
+  column-gap: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  grid-column: span 12;
+  justify-content: center;
+  margin-bottom: 50px;
+  min-height: 358px;
+  row-gap: 20px;
+
+  @media screen and (max-width: 569px) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: 570px) {
+    flex-direction: row;
+    padding: 49px 50px 33px 0;
+  }
+
+  @media screen and (min-width: 1100px) {
+    grid-column: span 6;
+    justify-content: space-between;
+  }
+
+  &_search {
+    @include bg-image("../images/card-bg-search.png", center);
+
+    @media screen and (min-width: 1100px) {
+      background-position: right center;
+      margin-right: 17px;
+    }
+  }
+
+  &_access {
+    @include bg-image("../images/card-bg-access.png", center);
+
+    @media screen and (min-width: 1100px) {
+      background-position: right center;
+      margin-left: 13px;
+    }
+  }
+
+  &_print {
+    @include bg-image("../images/card-bg-print.png", center);
+
+    @media screen and (min-width: 1100px) {
+      background-position: right center;
+      margin-right: 17px;
+    }
+  }
+
+  &_security {
+    @include bg-image("../images/card-bg-security.png", center);
+
+    @media screen and (min-width: 1100px) {
+      background-position: right center;
+      margin-left: 13px;
+    }
+  }
+
+  &__image {
+    align-self: center;
+    height: auto;
+    max-width: 100%;
+
+    @media screen and (max-width: 569px) {
+      margin-top: -100px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+  }
+
+  &__title {
+    color: $primary-text-color;
+    font-family: $font-family-headings;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    margin: 0 0 20px;
+  }
+
+  &__description {
+    color: $secondary-text-color;
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 0 auto;
+  }
+
+  &__link {
+    align-self: flex-start;
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($primary-text-color, 20%);
+    }
+
+    &_icon {
+      @include bg-icon("../images/icon-arrow.png", right center, right, 40px);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.contact {
+  &__logo {
+    align-items: center;
+    column-gap: 20px;
+    display: flex;
+    margin-bottom: 65px;
+  }
+
+  &__title {
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &__address {
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1%;
+    line-height: 29px;
+  }
+
+  &__location {
+    margin: 0 0 10px;
+  }
+
+  &__link {
+    color: $primary-text-color;
+    display: inline-block;
+    font-weight: 400;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

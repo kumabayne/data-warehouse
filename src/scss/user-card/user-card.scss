@@ -1,0 +1,71 @@
+.user-card {
+  background-color: $white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  column-gap: 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 20px;
+
+  @media screen and (min-width: 640px) {
+    flex-direction: row;
+    padding: 60px 70px 50px;
+  }
+
+  &_active {
+    box-shadow: 0 20px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  &_inactive {
+    box-shadow: 0 20px 0 rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  &_inactive:after {
+    background: linear-gradient(
+      270deg,
+      $primary-color 9.75%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 400px;
+  }
+
+  &__image {
+    align-self: flex-start;
+  }
+
+  &__user {
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-weight: 800;
+    letter-spacing: 0.5%;
+    line-height: 29px;
+    margin: 0;
+  }
+
+  &__link {
+    color: $primary-color;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1%;
+    margin: 0 0 19px;
+    text-decoration: none;
+  }
+
+  &__description {
+    color: $secondary-text-color;
+    font-family: $font-family;
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,47 @@
+.list {
+  padding-top: 10px;
+
+  &__title {
+    color: $primary-text-color;
+    font-family: $font-family;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 26px;
+    margin: 0 0 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    &_social {
+      column-gap: 14px;
+      display: inline-flex;
+    }
+  }
+
+  &__item {
+    font-family: $font-family;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  &__link {
+    color: $primary-text-color;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &_social {
+      background-color: $primary-text-color;
+      border-radius: 50%;
+      display: inline-block;
+      height: 50px;
+      opacity: 0.1;
+      width: 50px;
+    }
+  }
+}

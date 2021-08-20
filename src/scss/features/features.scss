@@ -1,0 +1,19 @@
+.features {
+  padding: 50px 0;
+
+  &__title {
+    color: $primary-text-color;
+    margin: 0 0 50px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0 auto 50px;
+    max-width: 584px;
+    text-align: center;
+
+    @media screen and (min-width: 640px) {
+      margin-bottom: 100px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.hero {
+  padding: 50px 0;
+
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+  &__image {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media screen and (min-width: 1160px) {
+      float: right;
+      margin: 96px 0 0 0;
+    }
+
+    @media screen and (min-width: 1400px) {
+      margin-right: -131px;
+    }
+
+    &_cloud-cutout {
+      @media screen and (min-width: 1160px) {
+        shape-outside: polygon(
+          10px 490px,
+          11px 254px,
+          215px 141px,
+          433px 76px,
+          756px 75px,
+          754px 564px,
+          171px 562px
+        );
+      }
+    }
+  }
+
+  &__title {
+    color: $primary-text-color;
+    font-family: $font-family-headings;
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 0 0 50px;
+
+    @media screen and (min-width: 520px) {
+      font-size: 80px;
+    }
+  }
+
+  &__description {
+    margin: 0 0 50px;
+  }
+}

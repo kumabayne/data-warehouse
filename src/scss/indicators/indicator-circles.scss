@@ -1,0 +1,19 @@
+.indicator-circles {
+  align-items: center;
+  column-gap: 10px;
+  display: flex;
+
+  &__circle {
+    background-color: $white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+
+    &_active {
+      background-color: $secondary-color;
+      height: 10px;
+      width: 10px;
+    }
+  }
+}

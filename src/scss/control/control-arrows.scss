@@ -1,0 +1,25 @@
+.control-arrows {
+  column-gap: 20px;
+  display: flex;
+
+  &__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+
+    &_previous {
+      background-image: url("../images/control-arrow-previous.png");
+      background-repeat: no-repeat;
+      height: 16px;
+      width: 42px;
+    }
+
+    &_next {
+      background-image: url("../images/control-arrow-next.png");
+      background-repeat: no-repeat;
+      height: 16px;
+      width: 22px;
+    }
+  }
+}

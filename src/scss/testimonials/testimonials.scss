@@ -1,0 +1,57 @@
+.testimonials {
+  background-color: $primary-color;
+  overflow: hidden;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 40px 20px;
+
+  @media screen and (min-width: 640px) {
+    border-radius: 50px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 58px;
+  }
+
+  @media screen and (min-width: 798px) {
+    padding: 109px 0 58px 93px;
+  }
+
+  &__title {
+    color: $white;
+    margin: 0 0 20px;
+
+    @media screen and (min-width: 640px) {
+      margin-bottom: 88px;
+    }
+  }
+
+  &__cards {
+    column-gap: 20px;
+    display: flex;
+    margin-bottom: 58px;
+  }
+
+  &__card {
+    @media screen and (min-width: 798px) {
+      min-width: 645px;
+      width: 645px;
+    }
+  }
+
+  &__card_inactive {
+    display: none;
+
+    @media screen and (min-width: 798px) {
+      display: flex;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (min-width: 798px) {
+      padding-right: 76px;
+    }
+  }
+}

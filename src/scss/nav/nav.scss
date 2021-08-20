@@ -1,0 +1,37 @@
+.nav {
+  font-family: $font-family;
+  font-size: $nav-text-size;
+  font-weight: 500;
+
+  &__list {
+    align-items: center;
+    column-gap: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    row-gap: 20px;
+
+    @media screen and (min-width: 368px) {
+      flex-direction: row;
+    }
+  }
+
+  &__item {
+    line-height: 26px;
+
+    &_active {
+      color: $nav-text-color-active;
+      font-weight: 800;
+    }
+  }
+
+  &__link {
+    color: $nav-text-color;
+    text-decoration: none;
+
+    &:hover {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}

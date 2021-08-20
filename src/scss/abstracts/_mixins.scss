@@ -1,0 +1,15 @@
+@mixin bg-image($url, $background-position) {
+  background-image: url(#{$url});
+  background-repeat: no-repeat;
+  background-position: $background-position;
+}
+
+@mixin bg-icon(
+  $url,
+  $background-position,
+  $padding-direction,
+  $padding-amount
+) {
+  @include bg-image($url, $background-position);
+  padding-#{$padding-direction}: $padding-amount;
+}

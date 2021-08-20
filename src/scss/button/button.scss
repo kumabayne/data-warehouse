@@ -1,0 +1,53 @@
+.button {
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: $font-family;
+  font-weight: 800;
+
+  &_primary {
+    background-color: $white;
+    box-shadow: 0 5px 5px rgba(75, 93, 104, 0.1);
+    color: $primary-text-color;
+    font-size: 16px;
+    letter-spacing: 0.05%;
+    line-height: 26px;
+    padding: 17px 29px;
+    transition: box-shadow 0.4s linear;
+
+    &:hover {
+      box-shadow: 0 5px 5px rgba(lighten($primary-text-color, 20%), 0.2);
+    }
+  }
+
+  &_secondary {
+    background-color: $primary-color;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    color: $white;
+    font-size: 18px;
+    line-height: 29px;
+    padding: 16px 37px 15px;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $primary-color;
+      color: $primary-color;
+    }
+  }
+
+  &_secondary-alt {
+    background-color: $secondary-color;
+
+    &:hover {
+      border-color: $secondary-color;
+      color: $secondary-color;
+    }
+  }
+
+  &__text {
+    &_icon {
+      @include bg-icon("../images/icon-arrow.png", right center, right, 40px);
+    }
+  }
+}

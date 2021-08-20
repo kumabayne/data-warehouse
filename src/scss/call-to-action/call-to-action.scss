@@ -1,0 +1,13 @@
+.call-to-action {
+  &__title {
+    color: $primary-text-color;
+    margin: 0 0 20px;
+  }
+
+  &__buttons {
+    column-gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+}
